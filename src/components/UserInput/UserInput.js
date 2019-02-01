@@ -16,7 +16,7 @@ class UserInput extends Component {
     if (this.state.placeName.trim() === "") {
       return;
     }
-
+    
     this.props.onPlaceAdded(this.state.placeName)
   }
 
@@ -24,8 +24,9 @@ class UserInput extends Component {
   render(){
     return(
       <View style={styles.inputContainer}>
-        <TextInput style={styles.placeInput}
-          placeholder="Where do you want to go today"
+        <TextInput
+          style={styles.placeInput}
+          placeholder="Lets go there"
           value={this.state.placeName}
           onChangeText={this.placeNameChangedHandler}
         />
@@ -47,9 +48,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   placeInput: {
-    width: "70%",
-    borderColor: "black",
-    borderWidth: 1
+    width: "70%"
   },
   placeButton: {
     width: "30%"
