@@ -4,21 +4,21 @@ import { View, TextInput, StyleSheet, Button } from 'react-native';
 class UserInput extends Component {
   state = {
     placeName: ''
-  }
+  };
 
   placeNameChangedHandler = e => {
     this.setState({
         placeName: e
       })
-  }
+  };
 
   placeSubmitHandler = () => {
     if (this.state.placeName.trim() === "") {
       return;
     }
-    
+
     this.props.onPlaceAdded(this.state.placeName)
-  }
+  };
 
 
   render(){
@@ -36,9 +36,9 @@ class UserInput extends Component {
           onPress={this.placeSubmitHandler}
         />
       </View>
-    )
-  }
-}
+    );
+  };
+};
 
 const styles = StyleSheet.create({
   inputContainer: {

@@ -12,7 +12,7 @@ const listItem = (props) => (
         <Text>{props.placeName}</Text>
     </View>
   </TouchableWithoutFeedback>
-)
+);
 
 const styles = StyleSheet.create({
   listItem: {
@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
     height: 30,
     width: 30
   }
-})
+});
 
 export default listItem;

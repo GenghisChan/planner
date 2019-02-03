@@ -10,8 +10,8 @@ const placeDetail = props => {
             <Image source={props.selectedPlace.image} style={styles.placeImage}/>
             <Text style={styles.placeName}>{props.selectedPlace.name}</Text>
           </View>
-      )
-    }
+      );
+    };
 
   return(
   <Modal
