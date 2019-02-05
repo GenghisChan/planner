@@ -30,6 +30,7 @@ modalClosedHandler = () => {
 }
 
   render() {
+    console.log(`${addPlace}`)
     return (
       <View style={styles.container}>
           <PlaceDetail
