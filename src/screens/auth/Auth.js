@@ -6,6 +6,7 @@ class AuthScreen extends Component {
   loginHandler = () => {
     startMainTabs();
   }
+  
   render() {
     return(
       <View>
